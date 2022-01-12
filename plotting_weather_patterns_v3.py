@@ -103,7 +103,9 @@ for spine in plt.gca().spines.values():
 plt.grid(which='major', axis='y')
 
 plt.gca().set_xticklabels(d, fontsize=6)
-temp = np.arange(-500, 500, 100)
+
+temp = np.arange(-400, 500, 100)
+plt.gca().set_yticks(temp)
 plt.gca().set_yticklabels(temp, fontsize=6)
 plt.gca().xaxis.set_major_formatter(DateFormatter('%m-%d'))
 
