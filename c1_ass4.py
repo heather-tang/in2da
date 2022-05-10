@@ -55,8 +55,8 @@ population_by_region = out_df['Population (2016 est.)[8]']
 win_loss_by_region = out_df['Ratio']
 corr = stats.pearsonr(population_by_region, win_loss_by_region)[0]
 
-#### Q2
 
+#### Q2
 import pandas as pd
 import numpy as np
 import scipy.stats as stats
@@ -120,8 +120,8 @@ population_by_region = out_df['Population (2016 est.)[8]'].to_list()
 win_loss_by_region = out_df['Ratio'].to_list()
 corr = stats.pearsonr(population_by_region, win_loss_by_region)[0]
 
-#### Q3
 
+#### Q3
 import pandas as pd
 import numpy as np
 import scipy.stats as stats
@@ -177,6 +177,7 @@ out_df['Population (2016 est.)[8]'] = pd.to_numeric(out_df['Population (2016 est
 population_by_region = out_df['Population (2016 est.)[8]'].to_list()
 win_loss_by_region = out_df['Ratio'].to_list()
 corr = stats.pearsonr(population_by_region, win_loss_by_region)[0]
+
 
 #### Q4
 import pandas as pd
